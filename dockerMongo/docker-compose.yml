@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mongo:
+   image: mongo
+   network_mode: host
+   restart: always
+   volumes:
+    - /home/test14/Documents/dockerMongo/mongodb:/data/db
+   environment:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: example
